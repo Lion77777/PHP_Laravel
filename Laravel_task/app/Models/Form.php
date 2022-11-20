@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Form extends Model
 {
     use HasFactory;
+
+    public $fillable = [
+        'name',
+        'email',
+        'message',
+    ];
 }
