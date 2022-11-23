@@ -22,4 +22,10 @@ class FormValidationController extends Controller
 
         return back()->with('success', '');
     }
+
+    public function showUserData() {
+        $data = Form::all();
+
+        return view('form', compact('data'));
+    }
 }

@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/form', [FormValidationController::class, 'createUserForm']);
 Route::post('/form', [FormValidationController::class, 'UserForm'])->name('validate.form');
+Route::get('/form', [FormValidationController::class, 'showUserData']);
